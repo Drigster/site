@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html data-theme="mytheme">
+	<head>
+		<link href="/css/style.css" rel="stylesheet">
+  		<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+		<title>Центр Единство</title>
+		{% block head %}{% endblock %}
+	</head>
+	<body>
+		<!-- Made by https://github.com/Drigster -->
+		{% include "./partials/nav.njk" %}
+		{% include "./partials/intro.njk" %}
+		<div class="container">
+			{% block content %}{% endblock %}
+		</div>
+		{% block script %}{% endblock %}
+		{% include "./partials/footer.njk" %}
+	</body>
+</html>
