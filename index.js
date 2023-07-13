@@ -1,9 +1,6 @@
 import express from "express";
 import nunjucks from "nunjucks";
-import session from "express-session";
-import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
-import fileUpload from "express-fileupload";
 import fs from "fs";
 import http from "http";
 import https from "https";
@@ -17,13 +14,6 @@ app.set("view engine", "njk");
 app.use(express.static("./public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(fileUpload());
-app.use(session({
-	secret: process.env.SESSION_SECRET,
-	resave: false,
-	saveUninitialized: false
-}));
-app.use(cookieParser());
 
 nunjucks.configure("views", {
 	autoescape: true,
