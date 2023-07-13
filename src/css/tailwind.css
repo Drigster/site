@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 html {
-    @apply scroll-smooth
+    @apply scroll-smooth;
 }
 body {
-    @apply bg-base-200
+    @apply bg-base-200;
 }

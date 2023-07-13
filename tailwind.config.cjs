@@ -14,11 +14,11 @@ module.exports = {
 			"light",
 			{
 				mytheme: {
-					"primary": "#641ae6",
-					"secondary": "#d926a9",
-					"accent": "#1fb2a6",
+					"primary": "#A77100",
+					"secondary": "#CFD15B",
+					"accent": "#914540",
 					"neutral": "#2a323c",
-					"base-100": "#1d232a",
+					"base-100": "#fff",
 					"info": "#3abff8",
 					"success": "#36d399",
 					"warning": "#fbbd23",
